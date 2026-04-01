@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOSCAMCOIN</title>
+
+  <link rel="stylesheet" href="coin.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a2d9d6b7c4.js" crossorigin="anonymous"></script>
+
+  <!-- Chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  Remaining Coins 1B. Raised: $1.234M Buy NSC at $0.045
+</div>
+
+<!-- HEADER -->
+<header>
+  <h1>NOSCAMCOIN</h1>
+
+  <button class="buy-btn">Buy</button>
+
+  <div class="menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav id="nav">
+    <a href="#">Home</a>
+    <a href="#">Tokenomics</a>
+    <a href="#">Presale</a>
+    <a href="#">Roadmap</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-text">
+    <h2>Fortifying Crypto Security<br>At Every Layer</h2>
+
+    <p>No scams. No hype. Just transparency.</p>
+
+    <div class="hero-buttons">
+      <button onclick="connectWallet()">Connect Wallet</button>
+      <button onclick="copyAddress()">Copy Contract</button>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="glow-circle"></div>
+    <div class="coin"><img src="coin.jpg" alt=""></div>
+  </div>
+
+</section>
+
+<!-- TREASURY -->
+<section class="treasury">
+  <h3>Mainnet Treasury</h3>
+
+  <p id="contract">0x123456789ABCDEF123456789</p>
+
+  <h4>19,000,000,000</h4>
+</section>
+
+<!-- TOKENOMICS -->
+<section class="tokenomics">
+  <h2>Tokenomics</h2>
+  <canvas id="chart"></canvas>
+</section>
+
+<script src="coin.js"></script>
+</body>
+</html>
